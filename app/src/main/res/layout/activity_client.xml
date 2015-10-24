@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:id="@+id/myclientlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/client_title"
+            android:textSize="25dp"
+            tools:context=".ClientActivity" />
+    
+        <Button
+            android:id="@+id/discover_peers_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="searchForPeers"
+            android:text="@string/client_search" />
+
+        <TextView
+            android:id="@+id/file_transfer_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:paddingTop="3dp"
+            tools:context=".ClientActivity" />
+        
+        <TextView
+            android:id="@+id/selected_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:visibility="invisible"
+            tools:context=".ClientActivity"
+            android:text="@string/no_file_selected"/>
+
+        <ListView
+            android:id="@+id/peers_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+
+        <TextView
+            android:id="@+id/client_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            tools:context=".ClientActivity"/>
+
+        <Button
+            android:id="@+id/send_file_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="browseForFile"
+            android:visibility="invisible"
+            android:text="@string/browse_path_button" />
+
+        <!--Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="sendFile"
+            android:visibility="visible"
+            android:text="@string/client_send_file" /-->
+
+        <TextView
+            android:id="@+id/client_wifi_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textColor="#ff0000"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            tools:context=".ClientActivity" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/proj/dev/rsriram/android/P2PFileShare/app/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fc834ac8147bc4ed0b555f90f500a57d4232c448">
+        <dex dex="/proj/dev/rsriram/android/P2PFileShare/app/build/intermediates/pre-dexed/debug/android-support-v4-253e63f13ae9c01210675ed53f5749ab2226185c.jar" />
+    </item>
+    <item
+        jar="/proj/dev/rsriram/android/WifiP2P/app/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fc834ac8147bc4ed0b555f90f500a57d4232c448">
+        <dex dex="/proj/dev/rsriram/android/WifiP2P/app/build/intermediates/pre-dexed/debug/android-support-v4-590278e0499a93ca88d9ade2ffa94f0691f5f0b5.jar" />
+    </item>
+
+</items>
